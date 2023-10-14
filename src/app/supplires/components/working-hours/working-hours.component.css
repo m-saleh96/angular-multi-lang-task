@@ -1,0 +1,18 @@
+.outer-wrapper{
+  background-color: white;
+  border-radius: 12px;
+}
+.toggle-button{
+  border-radius: 10px;
+  border: 1px solid #F5F5F5;
+  background-color: #FBFBFB;
+  width: max-content;
+  height: fit-content;
+}
+.text-top{
+  font-size: 24px;
+}
+.text-bottom{
+  color: #92A1AD;
+}
+

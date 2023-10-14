@@ -1,0 +1,41 @@
+<div class="container my-4 py-4 px-4 pt-4">
+  <div class="row d-flex justify-content-end my-1">
+    <div class="col-4 col-md-4 col-xl-3 col-xxl-2">
+      <div class="image-container">
+        <img [src]="imageUrl" id="uploaded-image" (click)="handleImageClick()">
+        <div class="gallery-icon">
+          <i class="fa fa-image"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-8  col-md-8 col-xl-9 col-xxl-10">
+      <form class="form-container d-flex  flex-column">
+        <label class="my-2" for="username">{{'supplier.supplier.name' | translate}}</label>
+        <input class="form-control text-right" type="text" id="username" placeholder="{{'supplier.input.name' | translate}}">
+      </form>
+    </div>
+  </div>
+</div>
+
+<input type="file" accept="image/*" id="file-input" style="display: none;" (change)="handleFileInput($event)">
+
+<div class="container mt-4 py-2">
+  <form >
+    <div class="form-group py-3">
+      <label class="mx-3">{{ 'supplier.choose.resources' | translate }}</label>
+
+      <div class="radio-group">
+        <div class="radio-item mx-3">
+          <input name="duration" class="mx-1 form-check-input" type="radio" value="duringday" checked>
+          <label class="radio-label">{{ 'supplier.during.day' | translate }}
+          </label>
+        </div>
+
+        <div class="radio-item mx-3">
+          <input name="duration" class="mx-1 form-check-input" type="radio" value="moredays">
+          <label class="radio-label">{{ 'supplier.reserve.more' | translate }}</label>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

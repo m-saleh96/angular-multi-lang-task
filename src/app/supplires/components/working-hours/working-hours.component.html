@@ -1,0 +1,21 @@
+<div class="outer-wrapper px-5 py-3 mb-3">
+
+  <div class="d-lg-flex justify-content-lg-between align-items-lg-center py-3">
+    <div class="text-container text-right pr-4">
+      <p class="text-top">{{'workingHours.work.hours' | translate}}</p>
+      <p class="text-bottom">{{'workingHours.info' | translate}}</p>
+    </div>
+
+    <div class="toggle-button pl-3 py-2">
+      <button class="btn" [ngClass]="{'btn-primary': !isTraditionalSettingsSelected}" (click)="selectAdvancedSettings()">{{'workingHours.advanced.settings' | translate}}</button>
+      <button class="btn" [ngClass]="{'btn-primary': isTraditionalSettingsSelected}" (click)="selectTraditionalSettings()">{{'workingHours.traditional.settings' | translate}}</button>
+    </div>
+  </div>
+
+
+  <div>
+    <app-days-time></app-days-time>
+  </div>
+
+</div>
+

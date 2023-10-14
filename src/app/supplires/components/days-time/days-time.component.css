@@ -1,0 +1,14 @@
+
+.add-remove-btn{
+  background-color: #F1F3F4;
+  border-radius: 50%;
+}
+.copy-btn{
+  background-color: #E7EAED96;
+  border-radius: 10px;
+}
+
+span{
+  display: inline-block;
+  width: max-content;
+}

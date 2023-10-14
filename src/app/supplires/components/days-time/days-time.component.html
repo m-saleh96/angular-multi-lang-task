@@ -1,0 +1,114 @@
+<ng-container *ngFor="let day of days">
+
+  <div class="row align-items-center  py-3">
+
+    <div class="col-md-2 d-flex align-items-center ">
+      <div class="form-check form-switch">
+        <label class="form-check-label" [for]="day.id"></label>
+        <input class="form-check-input" type="checkbox" id="switchChecked" [id]="day.id" (change)="toggleTimePicker($event, day)">
+      </div>
+      <label class="mx-3">{{ day.name | translate }}</label>
+    </div>
+
+    <div class="col-md-10 table-responsive"  *ngIf="day.activated">
+      <table>
+        <tr>
+          <td>
+            <label for="start-time">{{'days.start.time' | translate}}</label>
+          </td>
+          <td></td>
+          <td><label for="end-time">{{"days.end.time" | translate}}</label></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="time">
+              <input id="start-time" type="time" class="form-control" placeholder="{{'days.choose.time' | translate}}">
+            </div>
+          </td>
+          <td>
+            <div class="mb-2 px-3">
+              <span>--</span>
+            </div>
+          </td>
+          <td>
+            <div class="time">
+              <input id="end-time" type="time" class="form-control" placeholder="{{'days.choose.time' | translate}}">
+            </div>
+          </td>
+          <td>
+            <div class="mx-4">
+              <button class="btn add-remove-btn" (click)="cloneRow(day)">
+                +
+              </button>
+            </div>
+          </td>
+          <td>
+            <div class="copy-btn mr-5">
+              <button class="btn p-3">
+                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8713 23.3316H4.39873C2.44192 23.3316 0.850006 21.7246 0.850006 19.7492V7.6138C0.850006 5.63841 2.44192 4.03139 4.39873 4.03139H12.8713C14.8281 4.03139 16.42 5.63841 16.42 7.6138V19.7492C16.42 21.7246 14.8281 23.3316 12.8713 23.3316ZM4.39873 5.82259C3.42039 5.82259 2.62437 6.62617 2.62437 7.6138V19.7492C2.62437 20.7368 3.42039 21.5404 4.39873 21.5404H12.8713C13.8496 21.5404 14.6457 20.7368 14.6457 19.7492V7.6138C14.6457 6.62617 13.8496 5.82259 12.8713 5.82259H4.39873ZM19.9688 17.5102V3.98661C19.9688 2.01123 18.3768 0.404213 16.42 0.404213H6.57232C6.08229 0.404213 5.68514 0.805128 5.68514 1.29981C5.68514 1.7945 6.08229 2.19541 6.57232 2.19541H16.42C17.3984 2.19541 18.1944 2.99899 18.1944 3.98661V17.5102C18.1944 18.0049 18.5915 18.4058 19.0816 18.4058C19.5716 18.4058 19.9688 18.0049 19.9688 17.5102Z" fill="#92A1AD"/>
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+
+
+  <div class="row" *ngFor="let day of day.moreTime">
+    <div class="col-md-2"></div>
+    <div class="col-md-10 table-responsive">
+      <table>
+        <tr>
+          <td>
+            <label for="start-time">{{'days.start.time' | translate}}</label>
+          </td>
+          <td></td>
+          <td>
+            <label for="end-time">{{"days.end.time" | translate}}</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="time">
+              <input id="start-time" type="time" class="form-control" placeholder="{{'days.choose.time' | translate}}">
+            </div>
+          </td>
+          <td>
+            <div class="mb-2 px-3">
+              <span>--</span>
+            </div>
+          </td>
+          <td>
+            <div class="time">
+              <input id="end-time" type="time" class="form-control" placeholder="{{'days.choose.time' | translate}}">
+            </div>
+          </td>
+          <td>
+            <div class="mx-4">
+              <button class="btn add-remove-btn" (click)="removeClonedRow(day)">
+                -
+              </button>
+            </div>
+          </td>
+          <td>
+            <div class="copy-btn mr-5">
+              <button class="btn p-3">
+                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8713 23.3316H4.39873C2.44192 23.3316 0.850006 21.7246 0.850006 19.7492V7.6138C0.850006 5.63841 2.44192 4.03139 4.39873 4.03139H12.8713C14.8281 4.03139 16.42 5.63841 16.42 7.6138V19.7492C16.42 21.7246 14.8281 23.3316 12.8713 23.3316ZM4.39873 5.82259C3.42039 5.82259 2.62437 6.62617 2.62437 7.6138V19.7492C2.62437 20.7368 3.42039 21.5404 4.39873 21.5404H12.8713C13.8496 21.5404 14.6457 20.7368 14.6457 19.7492V7.6138C14.6457 6.62617 13.8496 5.82259 12.8713 5.82259H4.39873ZM19.9688 17.5102V3.98661C19.9688 2.01123 18.3768 0.404213 16.42 0.404213H6.57232C6.08229 0.404213 5.68514 0.805128 5.68514 1.29981C5.68514 1.7945 6.08229 2.19541 6.57232 2.19541H16.42C17.3984 2.19541 18.1944 2.99899 18.1944 3.98661V17.5102C18.1944 18.0049 18.5915 18.4058 19.0816 18.4058C19.5716 18.4058 19.9688 18.0049 19.9688 17.5102Z" fill="#92A1AD"/>
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+</ng-container>
+

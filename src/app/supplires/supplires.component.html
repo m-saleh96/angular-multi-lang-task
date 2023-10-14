@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <app-head (emitFromChild)="reciveFromChild($event)"></app-head>
+    </div>
+    <div class="col-md-6">
+      <app-supplier></app-supplier>
+    </div>
+    <div class="col-md-6">
+      <app-available-supplier [isArabic]="isArabic"></app-available-supplier>
+    </div>
+    <div class="col-md-12">
+      <app-working-hours></app-working-hours>
+    </div>
+  </div>
+</div>

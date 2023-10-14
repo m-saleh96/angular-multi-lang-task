@@ -1,0 +1,62 @@
+{
+	"demo.heading": "عرض ترجمة التطبيق",
+	"demo.text": "يوضح هذا البرنامج التعليمي كيف يمكنك ترجمة تطبيق Angular الخاص بك بسهولة.",
+  "a7a":"shit",
+  "head": {
+    "delete.button": "حذف المورد",
+    "save.button": "حفظ التغييرات",
+    "switch": "مفعلة",
+    "add.resource": "اضافة موارد جديدة"
+  },
+  "supplier": {
+    "supplier.name": "اسم المورد",
+    "input.name": "محمد صالح",
+    "choose.resources": "اختر نوع الموارد",
+    "during.day": "حجز خلال اليوم",
+    "reserve.more": "حجز مدة (اكثر من يوم) "
+  },
+  "availableSupplier":{
+    "resources": "المورد المتاح الي",
+    "month": "شهر",
+    "day": "ادخل اليوم",
+    "during.day": "وقت المورد",
+    "jan": "يناير",
+    "feb": "فبراير",
+    "mar": "مارس",
+    "apr": "أبريل",
+    "may": "مايو",
+    "jun": "يونيو",
+    "jul": "يوليو",
+    "aug": "أغسطس",
+    "sep": "سبتمبر",
+    "oct": "أكتوبر",
+    "nov": "نوفمبر",
+    "dec": "ديسمبر",
+    "serv.time":"وقت الخدمة",
+    "fix.time":"الوقت الثابت",
+    "minute": "دقيقة",
+    "multi.reservation": "الحجز المتعدد",
+    "only.one": "حجز واحد فقط",
+    "morethan.one": "حجز اكثر من شخص لنفس الموعد",
+    "appointment": "موعد"
+  },
+  "workingHours": {
+    "work.hours": "حدد مواعيد العمل للمورد",
+    "info": "تكوين اعدادات اللأسبوع الخاص بك هنا. ما عليك سوى تحريك أشرطة التمرير و اضافة / ازالة أوقات الراحة لاعداد ساعات العمل",
+    "advanced.settings": "اعدادات متقدمة",
+    "traditional.settings": "اعدادات تقليدية"
+  },
+  "days": {
+    "saturday": "السبت",
+    "sunday": "الاحد",
+    "monday": "الاثنين",
+    "tuesday": "الثلاثاء",
+    "wednesday": "الاربعاء",
+    "thursday": "الخميس",
+    "friday": "الجمعة",
+    "start.time": "وقت البدء",
+    "end.time": "وقت النهاية",
+    "choose.time": "اختر الوقت"
+  }
+
+}

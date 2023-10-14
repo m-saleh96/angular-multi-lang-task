@@ -1,0 +1,60 @@
+{
+  "head": {
+    "delete.button": "delete resources",
+    "save.button": "save changes",
+    "switch": "activated",
+    "add.resource": "add new resources"
+  },
+  "supplier": {
+    "supplier.name": "supplier name",
+    "input.name": "Mohamed Saleh",
+    "choose.resources": "choose resources type",
+    "during.day": "reserve during the day",
+    "reserve.more": "reserve duration( more than one day )"
+  },
+  "availableSupplier":{
+    "resources": "resources available for",
+    "month": "month",
+    "day": "enter day",
+    "during.day": "resource time",
+    "jan": "Jan",
+    "feb": "Feb",
+    "mar": "Mar",
+    "apr": "Apr",
+    "may": "May",
+    "jun": "Jun",
+    "jul": "Jul",
+    "aug": "Aug",
+    "sep": "Sep",
+    "oct": "Oct",
+    "nov": "Nov",
+    "dec": "Dec",
+    "serv.time":"service time",
+    "fix.time":"fixed time",
+    "minute": "minute",
+    "multi.reservation": "multi-reservation",
+    "only.one": "only one",
+    "morethan.one": "more person for same time",
+    "appointment": "appointment"
+  },
+  "workingHours": {
+    "work.hours": "Specify working hours for the resource",
+    "info": "Configure your week's settings here. Simply move the sliders and add/remove break times to set up your working hours.",
+    "advanced.settings": "advanced settings",
+    "traditional.settings": "traditional settings"
+  },
+  "days": {
+    "saturday": "saturday",
+    "sunday": "sunday",
+    "monday": "monday",
+    "tuesday": "tuesday",
+    "wednesday": "wednesday",
+    "thursday": "thursday",
+    "friday": "friday",
+    "start.time": "start time",
+    "end.time": "end time",
+    "choose.time": "choose time"
+
+  }
+
+}
